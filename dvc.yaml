@@ -1,0 +1,9 @@
+stages:
+  scrap:
+    cmd: python3 scripts/scrap.py
+    deps:
+    - scripts/scrap.py
+    params:
+    - scrap.crawler_settings
+    outs:
+    - data/raw/bulldogjob.json

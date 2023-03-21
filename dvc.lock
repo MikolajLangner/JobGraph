@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  scrap:
+    cmd: python3 scripts/scrap.py
+    deps:
+    - path: scripts/scrap.py
+      md5: 9f7008337f2c821839db6518864d7772
+      size: 558
+    params:
+      params.yaml:
+        scrap.crawler_settings: scraper.jobboard.settings
+    outs:
+    - path: data/raw/bulldogjob.json
+      md5: 5ed9f2ea263c7ba5c560c366d6a017b2
+      size: 24447
+      isexec: true

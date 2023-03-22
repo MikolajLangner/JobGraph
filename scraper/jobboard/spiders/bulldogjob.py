@@ -28,7 +28,7 @@ class BulldogJobSpider(scrapy.Spider):
         consultant='Konsultant IT'
     )
 
-    start_urls = [f'https://bulldogjob.pl/companies/jobs/s/role,{role}' for role in list(roles)[:2]]
+    start_urls = [f'https://bulldogjob.pl/companies/jobs/s/role,{role}' for role in list(roles)]
 
     def parse(self, response, page=1, role=None):
         role = role if role else self.roles.get(response.url.split(',')[-1])

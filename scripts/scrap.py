@@ -17,7 +17,6 @@ def crawl(settings_path: str):
 def main():
     with open("params.yaml", "r") as f:
         cfg = yaml.safe_load(f)['scrap']
-
     crawl(cfg['crawler_settings'])
 
 

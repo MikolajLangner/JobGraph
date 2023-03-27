@@ -11,6 +11,6 @@ stages:
         scrap.crawler_settings: scraper.jobboard.settings
     outs:
     - path: data/raw/bulldogjob.json
-      md5: cab018d4771dc7ae8ceede287066f589
-      size: 68444
+      md5: f323ffdd9d5d8d0a139ac17cb7e70197
+      size: 66358
       isexec: true
